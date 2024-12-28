@@ -2,55 +2,62 @@
 <html ⚡>
 <head>
   <meta charset="utf-8">
-  <link rel="canonical" href="self.html">
+  <link rel="canonical" href="https://webstories.wishinhindi.com/happy-anniversary.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <title>My AMP Web Story</title>
+  <title>Wish In Hindi</title>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-  
-  
+
   <style amp-custom>
-    body { height: 1280px; font-family: Arial, sans-serif; background-color: #fff; }
-    amp-story { height: 1280px; font-family: 'Roboto', sans-serif; }
-    h1 { font-size: 24px; color: #fff; text-align: center; }
-    p { font-size: 16px; color: #fff; }
-    #page1 {  height: 1280px; }
+    body {font-family:system-ui; background-color:#fff;}
+    amp-story {font-family: system-ui;}
+	h2 {color:yellow; font-weight:bold;}
+	p {color:white; font-size:16px;}
+    .text-overlay {position:absolute; bottom:0px; width:100%; background:rgba(0, 0, 0, 0.6); padding:10px 5px; text-align:center;}
+	[animate-in="fly-in-bottom"] {animation-timing-function: ease-in-out;}
   </style>
-  
-  
-  
+
 </head>
 <body>
-  <amp-story standalone
-      title="My First Web Story"
-      publisher="Your Blog Name"
-      publisher-logo-src="https://example.com/logo.png"
-      poster-portrait-src="https://i.imgur.com/TBWkL0v.jpg">
-
+  <amp-story standalone title="All Major Festivals Date In 2025" publisher="Wish In Hindi" publisher-logo-src="https://i.imgur.com/q5prUsv.png" poster-portrait-src="https://i.imgur.com/WO8vxp6.jpg">
     <!-- First Page -->
-    <amp-story-page id="page1">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="https://i.imgur.com/WO8vxp6.jpg" width="720" height="1280" layout="responsive"></amp-img>
-      </amp-story-grid-layer>
+    <amp-story-page id="page1" auto-advance-after="8s">
+      <amp-story-grid-layer template="fill"><amp-img src="https://i.imgur.com/WO8vxp6.jpg" width="720" height="1280" layout="responsive"></amp-img>
+	  </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
-
-
       </amp-story-grid-layer>
     </amp-story-page>
+
+
+
 
     <!-- Second Page -->
-    <amp-story-page id="page2">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="https://i.imgur.com/TBWkL0v.jpg" width="720" height="1280" layout="responsive"></amp-img>
+    <amp-story-page id="page2" auto-advance-after="8s">
+      <amp-story-grid-layer template="fill"><amp-img src="https://i.imgur.com/TBWkL0v.jpg" width="720" height="1280" layout="responsive"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
-        <h1><a href='https://www.google.com' /> Explore More</h1>
-        <p>Here is another page with more content.</p>
+      <div class="text-overlay" animate-in="fly-in-bottom" animate-in-duration="2s">
+          <h2>Content Heading</h2>
+		  <p>This is the content of paragraph. It may also be displayed in previews or in the top branding section when the Web Story is viewed.</p>
+        </div>
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <!-- Add more pages as needed -->
+
+
+
+    <!-- Third Page -->
+    <amp-story-page id="page3" auto-advance-after="8s">
+      <amp-story-grid-layer template="fill"><amp-img src="https://i.imgur.com/WO8vxp6.jpg" width="720" height="1280" layout="responsive"></amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <div class="text-overlay" animate-in="fly-in-bottom" animate-in-duration="2s">
+          <h2>Content Heading</h2>
+		  <p>This is the content of paragraph. It may also be displayed in previews when the Web Story is viewed.</p>
+        </div>
+      </amp-story-grid-layer>
+    </amp-story-page>
 
   </amp-story>
 </body>
